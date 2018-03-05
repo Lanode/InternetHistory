@@ -30,12 +30,17 @@ details > summary:first-of-type {
 
 .illustration{
 	width: 300px;
+	border: 1px solid white;
 }
 
 .header{
 	overflow:hidden;
 	border-bottom: 1px solid black;
 	padding-bottom: 10px;
+}
+
+.spoiler{
+	display: inline-block;
 }
 
 @font-face {
@@ -72,12 +77,21 @@ details > summary:first-of-type {
 	font-weight: normal !important;
 }
 
+	.timeline-stone > *{
+		font-weight: normal !important;
+	}
+
 .timeline-antique{
 	background-color: black;
 	color: white;
 	font-family: 'Times New Roman';
 	font-size: 17.5px;
-	background: url(./stars.jpg);
+	background: url(./earth.gif) 40vw 20vh no-repeat, 
+                url(./saturn.gif) no-repeat, 
+                url(./sun.gif) 90vw 10vh no-repeat,
+                url(./buran.gif) 80vw 25vh no-repeat,
+				url(./stars.jpg) repeat;
+    background-size: auto, auto, 50px, 60px, auto; /* Меняем масштаб */
 }
 
 .timeline-dark{
