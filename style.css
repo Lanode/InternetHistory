@@ -21,6 +21,7 @@ details > summary:first-of-type {
 .illustration{
 	float: right;
 	width: 300px;
+	clear: right;
 }
 
 .header{
