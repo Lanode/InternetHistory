@@ -1,3 +1,13 @@
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
 summary {
 	cursor: pointer;
 	text-decoration: underline;
@@ -19,13 +29,110 @@ details > summary:first-of-type {
 }
 
 .illustration{
-	float: right;
 	width: 300px;
-	clear: right;
 }
 
 .header{
 	overflow:hidden;
 	border-bottom: 1px solid black;
 	padding-bottom: 10px;
+}
+
+@font-face {
+	font-family: 'Before Times'; /* Гарнитура шрифта */
+	src: url(./before.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: 'Stone Age'; /* Гарнитура шрифта */
+	src: url(./stone.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: 'Dark Age'; /* Гарнитура шрифта */
+	src: url(./dark.ttf); /* Путь к файлу со шрифтом */
+}
+
+.timeline_block{
+	margin: 0;
+	padding: 10px;
+}
+
+.timeline-before{
+	font-family: 'Before Times';
+	font-size: 15px;
+	background: url(./before.jpg);
+}
+
+.timeline-stone{
+	background-color: black;
+	color: lime;
+	font-size: 25px;
+	font-family: 'Stone Age';
+	font-weight: normal !important;
+}
+
+.timeline-antique{
+	background-color: black;
+	color: white;
+	font-family: 'Times New Roman';
+	font-size: 17.5px;
+	background: url(./stars.jpg);
+}
+
+.timeline-dark{
+	font-family: 'Dark Age';
+	font-size: 17.5px;
+}
+
+.timeline-gradient_1{
+	background: url(./before.jpg);
+	position: relative;
+}
+
+.timeline-gradient_1::after{
+	background:  linear-gradient(to bottom, transparent, #000);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.timeline-gradient_2{
+	background: url(./stars.jpg);
+	position: relative;
+}
+
+.timeline-gradient_2::after{
+	background:  linear-gradient(to bottom, #000, transparent);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.timeline-gradient_3{
+	background: url(./stars.jpg);
+	position: relative;
+}
+
+.timeline-gradient_3::after{
+	background:  linear-gradient(to bottom, transparent, #fff);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.timeline-gradient{
+	height: 100px
 }
