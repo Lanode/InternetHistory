@@ -12,3 +12,18 @@ details summary::-webkit-details-marker { display:none; }
 details > summary:first-of-type {
     list-style-type: none;
 }
+
+.logo{
+	float: right;
+	width: 150px;
+}
+
+.illustration{
+	float: right;
+	width: 300px;
+}
+
+.header{
+	overflow:hidden;
+	border-bottom: 1px solid black;
+}
