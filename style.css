@@ -1,8 +1,9 @@
 summary {
 	cursor: pointer;
+	text-decoration: underline;
 }
 summary:hover{
-	color: gray;
+	
 }
 summary:focus{
 	outline: none;
